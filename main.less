@@ -6,6 +6,7 @@
 
 // reset variables
 @body-bg: #e9eaed;
+@text-color: #222527;
 @brand-primary: #EB5424;
 @font-family-sans-serif: Helvetica, Arial, "PingFang SC", "Noto Sans", Roboto, "Microsoft Yahei", sans;
 
@@ -28,6 +29,9 @@
 // forms
 @border-radius-base: 3px;
 
+// panel
+@panel-default-border: #e5e6e9;
+
 // common
 .form-control {
   box-shadow: none;
@@ -39,10 +43,15 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
+.panel {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
 // header
 header {
   nav.navbar {
     border: none;
+    margin-bottom: 15px;
     .navbar-brand {
       font-weight: bold;
 
@@ -141,3 +150,15 @@ footer {
   }
 }
 
+.gems-info {
+  width: 480px;
+  margin: 0 auto;
+  
+  h5 {
+    font-size: 15px;
+  }
+
+  code {
+    padding: 4px 10px;
+  }
+}
