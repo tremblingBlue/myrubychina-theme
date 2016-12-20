@@ -9,7 +9,7 @@
 <body>
 <!-- Header begin -->
 <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -92,6 +92,7 @@
 <!-- Content begin -->
 <section>
     <div class="container">
+        <!-- gems bar begin -->
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="gems-info">
@@ -109,24 +110,265 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <!-- gems bar end -->
+
+
+        <!-- hot links begin -->
+        <div class="row hot-links">
             <div class="col-xs-3">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <i class="fa fa-comments-o"></i>
+                <div class="panel panel-default panel-topics">
+                    <div class="panel-body text-center">
+                        <a class="icon" href="#">
+                            <i class="fa fa-comments-o"></i>
+                        </a>
                     </div>
                     <div class="panel-footer">
-                        <div class="title">
-                           Ruby社区
-                        </div>
-                        <i class="fa fa-arrow-right"></i>
+                        <a class="title" href="#">
+                            Ruby社区
+                            <i class="pull-right fa fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-3"></div>
-            <div class="col-xs-3"></div>
-            <div class="col-xs-3"></div>
+            <div class="col-xs-3">
+                <div class="panel panel-default panel-wiki">
+                    <div class="panel-body text-center">
+                        <a class="icon" href="#">
+                            <i class="fa fa-support"></i>
+                        </a>
+                    </div>
+                    <div class="panel-footer">
+                        <a class="title" href="#">
+                            技术文档
+                            <i class="pull-right fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="panel panel-default panel-hr">
+                    <div class="panel-body text-center">
+                        <a class="icon" href="#">
+                            <i class="fa fa-users"></i>
+                        </a>
+                    </div>
+                    <div class="panel-footer">
+                        <a class="title" href="#">
+                            招聘与求职
+                            <i class="pull-right fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="panel panel-default panel-best-articles">
+                    <div class="panel-body text-center">
+                        <a class="icon" href="#">
+                            <i class="fa fa-diamond"></i>
+                        </a>
+                    </div>
+                    <div class="panel-footer">
+                        <a class="title" href="#">
+                            精华文章
+                            <i class="pull-right fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- hot links end -->
+
+
+        <!-- best-articles-nav begin -->
+        <div class="panel panel-default best-articles-nav">
+            <div class="panel-heading">
+                社区精华贴
+            </div>
+            <div class="panel-body"></div>
+            <div class="panel-footer">
+                <a href="#">查看更多精华贴...</a>
+            </div>
+        </div>
+        <!-- best-articles-nav end -->
+
+        <!-- node-nav begin -->
+        <div class="panel panel-default node-nav">
+            <div class="panel-heading">
+                Node Navigation
+            </div>
+            <div class="panel-body">
+                <div class="media">
+                    <span class="media-left">
+                       Ruby
+                    </span>
+                    <div class="media-body">
+                        <div class="links">
+                            <a href="#">新手问题</a>
+                            <a href="#">招聘</a>
+                            <a href="#">Rails</a>
+                            <a href="#">Gem</a>
+                            <a href="#">部署</a>
+                            <a href="#">测试</a>
+                            <a href="#">开源项目</a>
+                            <a href="#">mRuby</a>
+                            <a href="#">RVM/rbenv</a>
+                            <a href="#">求职</a>
+                            <a href="#">JRuby</a>
+                            <a href="#">Ruby</a>
+                            <a href="#">Sinatra</a>
+                            <a href="#">重构</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <span class="media-left">
+                       Front-End
+                    </span>
+                    <div class="media-body">
+                        <div class="links">
+                            <a href="#">JavaScript</a>
+                            <a href="#">CSS</a>
+                            <a href="#">EmberJS</a>
+                            <a href="#">AngularJS</a>
+                            <a href="#">ReactJS</a>
+                            <a href="#">Vue</a>
+                            <a href="#">Ruby</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <span class="media-left">
+                       Back-End
+                    </span>
+                    <div class="media-body">
+                        <div class="links">
+                            <a href="#">运维</a>
+                            <a href="#">Nginx</a>
+                            <a href="#">Git</a>
+                            <a href="#">Linux</a>
+                            <a href="#">Redis</a>
+                            <a href="#">云服务</a>
+                            <a href="#">算法</a>
+                            <a href="#">Mailer</a>
+                            <a href="#">安全</a>
+                            <a href="#">搜索分词</a>
+                            <a href="#">数据库</a>
+                            <a href="#">MongoDB</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <span class="media-left">
+                       Mobile
+                    </span>
+                    <div class="media-body">
+                        <div class="links">
+                            <a href="#">iOS</a>
+                            <a href="#">Android</a>
+                            <a href="#">RubyMotion</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <span class="media-left">
+                       分享
+                    </span>
+                    <div class="media-body">
+                        <div class="links">
+                            <a href="#">瞎扯谈</a>
+                            <a href="#">分享</a>
+                            <a href="#">工具控</a>
+                            <a href="#">书籍</a>
+                            <a href="#">产品控</a>
+                            <a href="#">插画/设计</a>
+                            <a href="#">移民</a>
+                            <a href="#">翻译</a>
+                            <a href="#">推广</a>
+                            <a href="#">健康</a>
+                            <a href="#">Mac</a>
+                            <a href="#">创业</a>
+                            <a href="#">数学</a>
+                            <a href="#">其他</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <span class="media-left">
+                       Languages
+                    </span>
+                    <div class="media-body">
+                        <div class="links">
+                            <a href="#">Python</a>
+                            <a href="#">Golang</a>
+                            <a href="#">ObjC/Swift</a>
+                            <a href="#">Erlang/Elixir</a>
+                            <a href="#">Haskell</a>
+                            <a href="#">Clojure</a>
+                            <a href="#">Crystal</a>
+                            <a href="#">Rust</a>
+                            <a href="#">Node.js</a>
+                            <a href="#">Donet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <span class="media-left">
+                       Ruby China
+                    </span>
+                    <div class="media-body">
+                        <div class="links">
+                            <a href="#">Homeland</a>
+                            <a href="#">反馈</a>
+                            <a href="#">公告</a>
+                            <a href="#">NoPoint</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <span class="media-left">
+                       活动
+                    </span>
+                    <div class="media-body">
+                        <div class="links">
+                            <a href="#">线下活动</a>
+                            <a href="#">RubyConf</a>
+                            <a href="#">RubyTuesday</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- node-nav end -->
+
+        <!-- cities-nav begin -->
+        <div class="panel panel-default cities-nav">
+            <div class="panel-heading">
+                Hot cities
+            </div>
+            <div class="panel-body">
+                <div class="links text-center">
+                    <a href="#">北京</a>
+                    <a href="#">上海</a>
+                    <a href="#">深圳</a>
+                    <a href="#">杭州</a>
+                    <a href="#">成都</a>
+                    <a href="#">广州</a>
+                    <a href="#">武汉</a>
+                    <a href="#">南京</a>
+                    <a href="#">大连</a>
+                    <a href="#">厦门</a>
+                    <a href="#">苏州</a>
+                </div>
+            </div>
+        </div>
+        <!-- cities-nav end -->
     </div>
 </section>
 <!-- Content end -->

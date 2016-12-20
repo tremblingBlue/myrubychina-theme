@@ -8,6 +8,8 @@
 @body-bg: #e9eaed;
 @text-color: #222527;
 @brand-primary: #EB5424;
+@link-color: #666;
+@link-hover-color: #303030;
 @font-family-sans-serif: Helvetica, Arial, "PingFang SC", "Noto Sans", Roboto, "Microsoft Yahei", sans;
 
 @component-active-color: @brand-primary;
@@ -44,9 +46,18 @@
 }
 
 .panel {
-  box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
 }
 
+.panel.panel-default .panel-heading {
+  color: #777;
+}
+
+body {
+  padding-top: 65px;
+}
 // header
 header {
   nav.navbar {
@@ -150,15 +161,80 @@ footer {
   }
 }
 
+// content
 .gems-info {
   width: 480px;
   margin: 0 auto;
-  
+
   h5 {
     font-size: 15px;
   }
 
   code {
     padding: 4px 10px;
+  }
+}
+
+.hot-links {
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  a.icon .fa {
+    font-size: 60px;
+  }
+  a.title {
+    display: block;
+    font-weight: bold;
+    i.fa {
+      margin-top: 3px;
+    }
+  }
+  .panel-footer {
+    border-color: #E9E9E9;
+    padding: 6px 15px;
+  }
+  .panel-topics a.icon {
+    color: #F86334;
+  }
+  .panel-hr a.icon {
+    color: #317DDA;
+  }
+  .panel-best-articles a.icon {
+    color: #3BD54E;
+  }
+  .panel-wiki a.icon {
+    color: #FFD52F;
+  }
+}
+
+.hot-links .panel:hover {
+  opacity: 0.75;
+}
+
+.cities-nav {
+  .links a {
+    padding: 0 6px;
+  }
+}
+
+.node-nav {
+  .media {
+    margin-bottom: 10px;
+    .media-left {
+      color: #aaa;
+      min-width: 130px;
+      text-align: right;
+    }
+    .media-body {
+      .links {
+        a {
+          display: block;
+          margin-bottom: 10px;
+          width: 100px;
+          float: left;
+          color: @gray-dark;
+        }
+      }
+    }
   }
 }
