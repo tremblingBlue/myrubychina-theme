@@ -59,6 +59,10 @@ body {
   padding-top: 65px;
 }
 
+body.topics-page {
+  padding-top: 51px;
+}
+
 // header
 header {
   nav.navbar {
@@ -163,6 +167,8 @@ footer {
 }
 
 // content
+
+// index page
 .gems-info {
   width: 480px;
   margin: 0 auto;
@@ -275,10 +281,10 @@ footer {
 
   }
 }
+
 .topic:last-child {
   border-bottom: none;
 }
-
 
 .node-nav {
   .media {
@@ -299,5 +305,37 @@ footer {
         }
       }
     }
+  }
+}
+
+// topics page
+
+.topics-navbar {
+  padding: 8px 0;
+  background: #f9f9f9;
+
+  .media-left {
+    margin-right: 15px;
+  }
+  .all-nodes-nav-btn {
+    line-height: 100%;
+    border: none;
+    background: #f0f0f0;
+    color: #606060;
+    border: 0;
+    padding: 8px;
+    &:hover {
+      background: #e0e0e0;
+    }
+  }
+  ul li a {
+    padding: 8px;
+    line-height: 100%;
+    color: #606060;
+  }
+  ul.nav>li>a:hover, ul.nav>li.active>a {
+    color: @gray-base;
+    border-bottom: 2px dotted #666666;
+    background: none;
   }
 }
