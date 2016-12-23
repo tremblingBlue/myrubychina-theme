@@ -33,6 +33,21 @@
 
 // panel
 @panel-default-border: #e5e6e9;
+@panel-default-heading-bg: #fafafa;
+@panel-heading-padding: 6px 15px;
+@panel-inner-border: #eee;
+
+// list group
+@list-group-border: #eee;
+
+// button
+@btn-primary-bg: #356DD0;
+@btn-primary-border:#0D54AB; 
+
+.btn.btn-primary:hover {
+  background: #317DDA;
+  border-color: #356DD0;
+}
 
 // common
 .form-control {
@@ -312,6 +327,7 @@ footer {
 
 .topics-navbar {
   padding: 8px 0;
+  margin-bottom: 15px;
   background: #f9f9f9;
 
   .media-left {
@@ -338,4 +354,19 @@ footer {
     border-bottom: 2px dotted #666666;
     background: none;
   }
+}
+
+.topics-page .topics-list .panel-body {
+  padding: 0;
+  .topic {
+    padding: 10px 15px;
+    &.media {
+      margin-top: 0;
+    }
+  }
+  
+}
+
+.friendly-sites-nav .list-group-item a>img {
+  width: 140px;
 }
