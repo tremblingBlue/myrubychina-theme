@@ -8,6 +8,7 @@
 @body-bg: #e9eaed;
 @text-color: #222527;
 @brand-primary: #EB5424;
+@brand-success:#45C722;
 @link-color: #666;
 @link-hover-color: #303030;
 @font-family-sans-serif: Helvetica, Arial, "PingFang SC", "Noto Sans", Roboto, "Microsoft Yahei", sans;
@@ -44,6 +45,8 @@
 @btn-primary-bg: #356DD0;
 @btn-primary-border: #0D54AB;
 
+@btn-success-border: @brand-success;
+
 .btn.btn-primary:hover {
   background: #317DDA;
   border-color: #356DD0;
@@ -70,12 +73,26 @@
   color: #777;
 }
 
+.media-body {
+  width: 10000px;
+}
+
 body {
   padding-top: 65px;
 }
 
 body.topics-list-page {
   padding-top: 51px;
+}
+
+a.btn-icon {
+  padding: 3px;
+  color: #666;
+  &:hover {
+    color: #666;
+    background: #f0f0f0;
+    text-decoration: none;
+  }
 }
 
 // header
@@ -275,7 +292,6 @@ footer {
     }
   }
   .media-body {
-    width: 10000px;
     color: #ABA8A6;
     font-size: 12px;
     a {
@@ -323,7 +339,7 @@ footer {
   }
 }
 
-// topics page
+// topics-list page
 
 .topics-navbar {
   padding: 8px 0;
@@ -402,14 +418,55 @@ footer {
         }
       }
     }
-    .media-body {
-      width: 10000px;
-    }
     .media-right img {
       width: 48px;
     }
-    
+
     .panel-footer {
+      color: #666;
+    }
+    .panel-body {
+      p {
+        font-size: 14px;
+        line-height: 1.5em
+      }
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+      }
+      a {
+        color: #0069D6;
+        &:hover {
+          color: #00438A;
+        }
+      }
+    }
+  }
+  .list-group-item.reply {
+    padding: 15px;
+    .reply-info {
+      color: #999;
+      margin-bottom: 6px;
+      font-size: @font-size-small;
+      .user {
+        font-size: 13px;
+        font-weight: bold;
+        color: @gray;
+      }
+      .reply-floor {
+        color: #7AA87A;
+      }
+    }
+  }
+
+  .praise-info {
+    h1 {
+      font-size: 40px;
       color: #666;
     }
   }
